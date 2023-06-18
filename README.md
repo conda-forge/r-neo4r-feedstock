@@ -1,11 +1,11 @@
-About r-neo4r
-=============
+About r-neo4r-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-neo4r-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/neo4j-rstats/neo4r
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-neo4r-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Modern and Flexible 'Neo4J' Driver, allowing you to query data on a 'Neo4J' server and handle the results in R. It's modern in the sense it provides a driver that can be easily integrated in a data analysis workflow, especially by providing an API working smoothly with other data analysis and graph packages. It's flexible in the  way it returns the results, by trying to stay as close as possible to the way 'Neo4J' returns data. That way, you have the control over the way you will compute the results. At the same time, the result is not too complex, so that the "heavy lifting" of data wrangling is not left to the user.
 
