@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/neo4r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/neo4r/neo4r_{{ version }}.tar.gz
-  sha256: 47e5f51c6980a9383befc8247a5cdee708d60652e4908b2e510cb12a2c949968
+  sha256: 36204c52981335ba41c1ed1bd8b0fc2d25f74f110ae6622fc6d61a3c72e64905
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -65,14 +65,9 @@ test:
 about:
   home: https://github.com/neo4j-rstats/neo4r
   license: MIT
-  summary: A Modern and Flexible 'Neo4J' Driver, allowing you to query data on a 'Neo4J' server
-    and handle the results in R. It's modern in the sense it provides a driver that
-    can be easily integrated in a data analysis workflow, especially by providing an
-    API working smoothly with other data analysis and graph packages. It's flexible
-    in the  way it returns the results, by trying to stay as close as possible to the
-    way 'Neo4J' returns data. That way, you have the control over the way you will compute
-    the results. At the same time, the result is not too complex, so that the "heavy
-    lifting" of data wrangling is not left to the user.
+  summary: A Modern and Flexible 'Neo4J' Driver, allowing you to query data on a 'Neo4J' server and handle the results in R. It's modern in the sense it provides a driver that can be easily integrated in a data analysis workflow, especially by providing an API working smoothly with other data analysis and graph 
+    packages. It's flexible in the  way it returns the results, by trying to stay as close as possible to the way 'Neo4J' returns data. That way, you have the control over the way you will compute the results. At the same time, the result is not too complex, so that the "heavy lifting" of data wrangling is not left to 
+    the user.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
